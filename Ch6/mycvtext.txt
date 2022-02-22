@@ -1,2 +1,0 @@
-Here is the beginning of life.
-Add this new line to the end of the file test.txt
