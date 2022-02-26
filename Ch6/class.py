@@ -32,7 +32,6 @@ class PersonClass(object):
 
 # Employee Class
 class EmployeeClass(PersonClass):
-
     # Constructors
     def __init__(self, first_name, last_name):
         super().__init__(first_name, last_name)
