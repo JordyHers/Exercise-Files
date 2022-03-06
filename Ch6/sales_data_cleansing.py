@@ -11,10 +11,8 @@ def main():
     print()
 
     # first we open the file we want to clean
-    # df_input_file = pd.read_csv(
-    #     r'/Users/jordyhers/Downloads/Ex_Files_Learning_Python_Upd/Exercise Files/Ch6/sales_data_test.csv', dtype=float)
-    # print(df_input_file)
-    df_input_file = pd.read_csv('sales_data_test.csv', dtype=float)
+    df_input_file = pd.read_csv(
+        r'/Users/jordyhers/Downloads/Ex_Files_Learning_Python_Upd/Exercise Files/Ch6/sales_data_test.csv', dtype=float)
     print(df_input_file)
 
     # Lets now find the number of rows and columns
@@ -33,6 +31,16 @@ def main():
 
     df_result = df_input_file["is_action"].value_counts()
     print("To know the repetition of values in the column is_action:")
+    print(df_result)
+    print()
+
+    # df_input_file = pd.DataFrame(data=df_input_file, index=["Mario Kart", "Tomb Raider", "Fifa 2022",
+    #                                                         "Nba 2k", "Fortnite", "Goddess", "Tetris", "Horizon", "Katamari", "Watch Dog", "Element 3"])
+    # print(df_input_file)
+
+    # Clear duplicated files
+    df_result = df_input_file.duplicated()
+    print("duplicated rows:")
     print(df_result)
     print()
 
